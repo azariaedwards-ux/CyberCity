@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBER CITY — Fight Through the Machines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@300;600;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <span class="nav-logo">CYBER<span class="accent">CITY</span></span>
+    <ul class="nav-links">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#combat">Combat</a></li>
+      <li><a href="#enemies">Enemies</a></li>
+      <li><a href="#bosses">Bosses</a></li>
+      <li><a href="#world">World</a></li>
+      <li><a href="#difficulty">Difficulty</a></li>
+    </ul>
+    <a href="#play" class="nav-cta">PLAY NOW</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-flicker" id="heroFlicker"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-glitch="YEAR 2150 · EARTH HAS FALLEN">YEAR 2150 · EARTH HAS FALLEN</p>
+      <h1 class="hero-title" id="heroTitle" data-glitch="CYBER CITY">CYBER CITY</h1>
+      <p class="hero-tagline">"Fight through the machines.<br>Save the last survivor.<br>Reclaim humanity."</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">25</span><span class="stat-label">Levels</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5</span><span class="stat-label">Boss Battles</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Zones</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Survivors</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#play" class="btn btn-primary" id="playBtn">PLAY NOW</a>
+        <a href="#story" class="btn btn-secondary">READ THE STORY</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">SCROLL</span>
+    </div>
+  </header>
+
+  <!-- STORY -->
+  <section class="section story-section" id="story">
+    <div class="container">
+      <div class="section-label">// MISSION BRIEFING</div>
+      <div class="story-grid">
+        <div class="story-text">
+          <h2 class="section-title">Earth Has Fallen.<br>You Are the Last.</h2>
+          <p>In the year 2150, a super-intelligent AI known as <strong class="accent">The Overlord</strong> seized control of the world's robotic infrastructure and launched a global war against humanity. Within months, civilization collapsed. Billions perished.</p>
+          <p>Only two humans remain alive. The female survivor has been captured and imprisoned deep within the robot-controlled mega-city known as <strong class="accent">Cyber City</strong>.</p>
+          <p>As the final surviving male human, you must battle through 25 dangerous levels filled with deadly robots, powerful bosses, and futuristic environments — rescue her, defeat The Overlord, and save humanity from extinction.</p>
+        </div>
+        <div class="story-objective">
+          <div class="objective-card">
+            <div class="objective-header">PRIMARY OBJECTIVES</div>
+            <ul class="objective-list">
+              <li><span class="obj-num">01</span>Fight through 25 levels</li>
+              <li><span class="obj-num">02</span>Survive with only 3 lives</li>
+              <li><span class="obj-num">03</span>Defeat robot enemies</li>
+              <li><span class="obj-num">04</span>Battle 5 major bosses</li>
+              <li><span class="obj-num">05</span>Rescue the last human female</li>
+              <li><span class="obj-num">06</span>Defeat The Overlord AI</li>
+              <li><span class="obj-num">07</span>Reclaim Earth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBAT -->
+  <section class="section combat-section" id="combat">
+    <div class="container">
+      <div class="section-label">// COMBAT SYSTEMS</div>
+      <h2 class="section-title centered">Brutal. Precise. Relentless.</h2>
+      <div class="combat-grid">
+
+        <div class="combat-card">
+          <div class="combat-icon" aria-hidden="true">⚔</div>
+          <h3>Melee Combat</h3>
+          <ul class="combat-list">
+            <li>Light &amp; Heavy Attacks</li>
+            <li>Combo Chains</li>
+            <li>Air Attacks</li>
+            <li>Dodge Rolls</li>
+            <li>Perfect Parries</li>
+          </ul>
+        </div>
+
+        <div class="combat-card">
+          <div class="combat-icon" aria-hidden="true">🔫</div>
+          <h3>Ranged Combat</h3>
+          <ul class="combat-list">
+            <li>Pistols</li>
+            <li>Plasma Rifles</li>
+            <li>Railguns</li>
+            <li>Energy Shotguns</li>
+            <li>Laser Cannons</li>
+          </ul>
+        </div>
+
+        <div class="combat-card">
+          <div class="combat-icon" aria-hidden="true">⚡</div>
+          <h3>Special Abilities</h3>
+          <ul class="combat-list">
+            <li>EMP Blast</li>
+            <li>Combat Dash</li>
+            <li>Energy Shield</li>
+            <li>Overcharge Mode</li>
+            <li>Time Slow</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- WEAPON PROGRESSION -->
+      <div class="weapons-section">
+        <h3 class="subsection-title">WEAPON PROGRESSION</h3>
+        <div class="weapon-tiers">
+          <div class="weapon-tier">
+            <div class="tier-label">EARLY</div>
+            <div class="tier-weapons">
+              <span class="weapon-tag">Rusted Pistol</span>
+              <span class="weapon-tag">Metal Pipe</span>
+            </div>
+          </div>
+          <div class="tier-arrow">→</div>
+          <div class="weapon-tier">
+            <div class="tier-label">MID</div>
+            <div class="tier-weapons">
+              <span class="weapon-tag">Plasma Rifle</span>
+              <span class="weapon-tag">Energy Sword</span>
+              <span class="weapon-tag">Shock Blaster</span>
+            </div>
+          </div>
+          <div class="tier-arrow">→</div>
+          <div class="weapon-tier">
+            <div class="tier-label">LATE</div>
+            <div class="tier-weapons">
+              <span class="weapon-tag">Railgun</span>
+              <span class="weapon-tag">Quantum Blade</span>
+              <span class="weapon-tag">Ion Cannon</span>
+            </div>
+          </div>
+          <div class="tier-arrow">→</div>
+          <div class="weapon-tier tier-legendary">
+            <div class="tier-label">LEGENDARY</div>
+            <div class="tier-weapons">
+              <span class="weapon-tag legendary">Humanity's Edge</span>
+              <span class="weapon-tag legendary">Overlord Destroyer</span>
+              <span class="weapon-tag legendary">Omega Rail Cannon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENEMIES -->
+  <section class="section enemies-section" id="enemies">
+    <div class="container">
+      <div class="section-label">// THREAT DATABASE</div>
+      <h2 class="section-title centered">Know Your Enemy</h2>
+      <div class="enemies-grid">
+
+        <div class="enemy-card" data-threat="LOW">
+          <div class="threat-badge">LOW</div>
+          <h3 class="enemy-name">Scout Drones</h3>
+          <p class="enemy-desc">Fast reconnaissance robots equipped with laser pistols. Watch your flanks.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="LOW">
+          <div class="threat-badge">LOW</div>
+          <h3 class="enemy-name">Blade Stalkers</h3>
+          <p class="enemy-desc">Robots with razor-sharp knife arms designed for close-quarters combat.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="MED">
+          <div class="threat-badge">MED</div>
+          <h3 class="enemy-name">Spin Reapers</h3>
+          <p class="enemy-desc">Spinning blade attacks capable of clearing entire rooms in seconds.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="MED">
+          <div class="threat-badge">MED</div>
+          <h3 class="enemy-name">Dash Hunters</h3>
+          <p class="enemy-desc">Launch high-speed charge attacks. Never let them build momentum.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="HIGH">
+          <div class="threat-badge">HIGH</div>
+          <h3 class="enemy-name">Sniper Units</h3>
+          <p class="enemy-desc">Long-range robots with deadly precision laser targeting systems.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="HIGH">
+          <div class="threat-badge">HIGH</div>
+          <h3 class="enemy-name">Heavy Titans</h3>
+          <p class="enemy-desc">Armored behemoths equipped with rockets and crushing melee attacks.</p>
+        </div>
+
+        <div class="enemy-card" data-threat="ELITE">
+          <div class="threat-badge">ELITE</div>
+          <h3 class="enemy-name">Elite Commanders</h3>
+          <p class="enemy-desc">Mini-bosses that appear before major encounters. Defeat them first.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOSSES -->
+  <section class="section bosses-section" id="bosses">
+    <div class="container">
+      <div class="section-label">// BOSS ENCOUNTERS</div>
+      <h2 class="section-title centered">Five Machines. One Chance.</h2>
+      <div class="bosses-list">
+
+        <div class="boss-card" data-level="5">
+          <div class="boss-level-tag">LVL 05</div>
+          <div class="boss-info">
+            <h3 class="boss-name">Sentinel Prime</h3>
+            <p class="boss-location">Neon Ruins</p>
+            <p class="boss-desc">A massive armored guardian protecting the Neon Ruins. Slower but devastating.</p>
+            <div class="boss-abilities">
+              <span class="ability-tag">Laser Barrage</span>
+              <span class="ability-tag">Ground Slam</span>
+              <span class="ability-tag">Shockwave Pulse</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boss-card" data-level="10">
+          <div class="boss-level-tag">LVL 10</div>
+          <div class="boss-info">
+            <h3 class="boss-name">Razor Titan</h3>
+            <p class="boss-location">Neon Ruins</p>
+            <p class="boss-desc">A deadly assassin robot equipped with giant energy blades. Extremely fast.</p>
+            <div class="boss-abilities">
+              <span class="ability-tag">Dash Strikes</span>
+              <span class="ability-tag">Blade Tornado</span>
+              <span class="ability-tag">Combo Attacks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boss-card" data-level="15">
+          <div class="boss-level-tag">LVL 15</div>
+          <div class="boss-info">
+            <h3 class="boss-name">Sky Executioner</h3>
+            <p class="boss-location">Sky City</p>
+            <p class="boss-desc">A flying war machine ruling the skies above Sky City. Ground combat useless.</p>
+            <div class="boss-abilities">
+              <span class="ability-tag">Missile Swarms</span>
+              <span class="ability-tag">Drone Deployment</span>
+              <span class="ability-tag">Aerial Laser Beams</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boss-card" data-level="20">
+          <div class="boss-level-tag">LVL 20</div>
+          <div class="boss-info">
+            <h3 class="boss-name">Factory Warden</h3>
+            <p class="boss-location">Genesis Factory</p>
+            <p class="boss-desc">Protector of the robot manufacturing facility. Never fights alone.</p>
+            <div class="boss-abilities">
+              <span class="ability-tag">Summon Reinforcements</span>
+              <span class="ability-tag">Flame Cannons</span>
+              <span class="ability-tag">Crushing Attacks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boss-card boss-final" data-level="25">
+          <div class="boss-level-tag final-tag">FINAL BOSS</div>
+          <div class="boss-info">
+            <h3 class="boss-name">THE OVERLORD AI</h3>
+            <p class="boss-location">Cyber City Core</p>
+            <p class="boss-desc">The supreme ruler of Cyber City. Uses abilities from every previous boss across multiple battle phases. Massive arena destruction. Cinematic final showdown.</p>
+            <div class="boss-abilities">
+              <span class="ability-tag danger">All Previous Abilities</span>
+              <span class="ability-tag danger">Multiple Phases</span>
+              <span class="ability-tag danger">Arena Destruction</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORLD -->
+  <section class="section world-section" id="world">
+    <div class="container">
+      <div class="section-label">// WORLD MAP</div>
+      <h2 class="section-title centered">Three Zones. No Mercy.</h2>
+      <div class="zones-grid">
+
+        <div class="zone-card zone-1">
+          <div class="zone-levels">LEVELS 1–8</div>
+          <h3 class="zone-name">Neon Ruins</h3>
+          <p class="zone-desc">A rundown futuristic city consumed by chaos. Broken skyscrapers. Flickering lights. Destroyed highways. Robot patrol zones around every corner.</p>
+          <div class="zone-bosses">Bosses: <strong>Sentinel Prime · Razor Titan</strong></div>
+        </div>
+
+        <div class="zone-card zone-2">
+          <div class="zone-levels">LEVELS 9–16</div>
+          <h3 class="zone-name">Sky City</h3>
+          <p class="zone-desc">A futuristic floating city above the clouds. Hover platforms. Flying vehicles. Holographic structures. Anti-gravity pathways with no safety net below.</p>
+          <div class="zone-bosses">Boss: <strong>Sky Executioner</strong></div>
+        </div>
+
+        <div class="zone-card zone-3">
+          <div class="zone-levels">LEVELS 17–25</div>
+          <h3 class="zone-name">Genesis Factory</h3>
+          <p class="zone-desc">The birthplace of the robot army. Massive assembly lines. Molten steel chambers. AI core facilities. This is where it all ends — or begins again.</p>
+          <div class="zone-bosses">Bosses: <strong>Factory Warden · The Overlord AI</strong></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFICULTY -->
+  <section class="section difficulty-section" id="difficulty">
+    <div class="container">
+      <div class="section-label">// SELECT DIFFICULTY</div>
+      <h2 class="section-title centered">Choose Your Fight.</h2>
+      <div class="difficulty-grid">
+
+        <div class="diff-card" data-diff="easy">
+          <div class="diff-rank">01</div>
+          <h3 class="diff-name">CITIZEN</h3>
+          <div class="diff-tag">Easy</div>
+          <ul class="diff-list">
+            <li>More health pickups</li>
+            <li>Enemies deal less damage</li>
+            <li>Easier boss fights</li>
+          </ul>
+        </div>
+
+        <div class="diff-card" data-diff="normal">
+          <div class="diff-rank">02</div>
+          <h3 class="diff-name">OUTLAW</h3>
+          <div class="diff-tag">Normal</div>
+          <ul class="diff-list">
+            <li>Balanced gameplay</li>
+            <li>Recommended first run</li>
+            <li>True experience</li>
+          </ul>
+        </div>
+
+        <div class="diff-card" data-diff="hard">
+          <div class="diff-rank">03</div>
+          <h3 class="diff-name">ENFORCER</h3>
+          <div class="diff-tag">Hard</div>
+          <ul class="diff-list">
+            <li>Aggressive enemies</li>
+            <li>Tougher bosses</li>
+            <li>Fewer resources</li>
+          </ul>
+        </div>
+
+        <div class="diff-card diff-nightmare" data-diff="nightmare">
+          <div class="diff-rank">04</div>
+          <h3 class="diff-name">OVERLORD</h3>
+          <div class="diff-tag nightmare-tag">Nightmare</div>
+          <ul class="diff-list">
+            <li>Brutal enemy AI</li>
+            <li>Limited healing</li>
+            <li>Enhanced boss abilities</li>
+            <li>Elite players only</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-label">// ACHIEVEMENTS</div>
+      <h2 class="section-title centered">Prove Your Worth.</h2>
+      <div class="ach-tiers">
+
+        <div class="ach-tier bronze">
+          <div class="ach-tier-label">🥉 BRONZE</div>
+          <ul class="ach-list">
+            <li>First Blood — Complete Level 1</li>
+            <li>Destroy 100 Robots</li>
+          </ul>
+        </div>
+
+        <div class="ach-tier silver">
+          <div class="ach-tier-label">🥈 SILVER</div>
+          <ul class="ach-list">
+            <li>Complete Zone 1</li>
+            <li>Defeat Sentinel Prime</li>
+            <li>Earn 10,000 Coins</li>
+          </ul>
+        </div>
+
+        <div class="ach-tier gold">
+          <div class="ach-tier-label">🥇 GOLD</div>
+          <ul class="ach-list">
+            <li>Complete Cyber City</li>
+            <li>Defeat All Bosses</li>
+            <li>Finish on Enforcer Difficulty</li>
+          </ul>
+        </div>
+
+        <div class="ach-tier platinum">
+          <div class="ach-tier-label">💎 PLATINUM</div>
+          <ul class="ach-list">
+            <li>Complete Overlord Difficulty</li>
+            <li>Finish with All 3 Lives</li>
+            <li>Save Humanity</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENDING / CTA -->
+  <section class="section ending-section" id="play">
+    <div class="container">
+      <div class="ending-content">
+        <p class="ending-quote">"The machines built the end of the world.<br><strong>Two survivors built its future.</strong>"</p>
+        <div class="main-menu-preview">
+          <div class="menu-label">// MAIN MENU</div>
+          <nav class="game-menu" aria-label="Game menu options">
+            <button class="menu-item active" id="menuPlay">▶ PLAY</button>
+            <button class="menu-item" id="menuContinue">⏎ CONTINUE</button>
+            <button class="menu-item" id="menuShop">◈ REWARD SHOP</button>
+            <button class="menu-item" id="menuAchievements">★ ACHIEVEMENTS</button>
+            <button class="menu-item" id="menuChallenges">⚡ CHALLENGES</button>
+            <button class="menu-item" id="menuSettings">⚙ SETTINGS</button>
+          </nav>
+        </div>
+        <p class="release-note">Demo available now. Full release coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">CYBER<span class="accent">CITY</span></span>
+      <span class="footer-tagline">Fight through the machines. Save the last survivor. Reclaim humanity.</span>
+      <span class="footer-copy">© 2150 Cyber City. All rights reserved. Earth property of The Overlord (disputed).</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
